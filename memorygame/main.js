@@ -60,9 +60,14 @@ function createboard(){
         const card = document.createElement('img')
         card.setAttribute('src', 'images/hidden.png')
         card.setAttribute('data-id', i)
+        card.addEventListener( )
         grid_display[i].appendChild(card)
     }
 }
 
 
 createboard()
+
+function flipcard(){
+
+}
