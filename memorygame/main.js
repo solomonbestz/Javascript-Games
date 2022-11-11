@@ -53,14 +53,14 @@ const card_array = [
 card_array.sort(() => 0.5 - Math.random())
 
 
-const grid_display = document.querySelector('#grid')
-
+const grid_display = document.querySelectorAll('.grid')
+console.log(grid_display)
 function createboard(){
     for(let i = 0; i < card_array.length; i++){
         const card = document.createElement('img')
         card.setAttribute('src', 'images/hidden.png')
         card.setAttribute('data-id', i)
-        grid_display.appendChild(card)
+        grid_display[i].appendChild(card)
     }
 }
 
