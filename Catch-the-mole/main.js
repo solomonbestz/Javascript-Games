@@ -43,6 +43,7 @@ function end_game(){
         alert("Game Over")
     }
 }
+
 function count_down(){
     current_time--
     time_left.innerHTML = current_time
